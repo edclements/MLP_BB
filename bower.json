@@ -1,0 +1,19 @@
+{
+  "name": "MyLocalPitch",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bookingbug-angular-public-booking": "~0.0.174",
+    "bookingbug-angular-member": "~0.0.174"
+  },
+  "resolutions": {
+    "angular": "1.2.28",
+    "moment": "master"
+  }
+}

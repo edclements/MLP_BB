@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="BB" bb-api-url="https://www.bookingbug.com">
+<html lang="en" ng-app="BB" bb-api-url="https://uk.bookingbug.com">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -23,24 +23,13 @@
 
 <body id="bb">
 
-  <!-- <div bb-widget="{
-    company_id: 'ukw3056403',
+  <div bb-widget="{
+    company_id: '47641',
     clear_member: true,
     item_defaults: {merge_resources: true, merge_people: true},
     route_format: '/{page}'
     }" bb-scroll-to="page:loaded" class="container">
-  </div> -->
+  </div>
 </body>
-
-<script type="text/javascript">
-    var loc = window.location.toString();
-    // params = loc.split('?')[1];
-    // var bbCompanyId = params.split("=")[1];
-    // console.log(bbCompanyId);
-    var div = document.getElementById('bb');
-
-    div.innerHTML = '<div bb-widget="{company_id: ukw3056403,clear_member: true,item_defaults: {merge_resources: true,merge_people: true},route_format: \'/{page}\' }" bb-scroll-to="page:loaded" class="container"></div>';
-    
-  </script>
 
 </html>

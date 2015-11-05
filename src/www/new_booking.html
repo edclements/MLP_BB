@@ -10,7 +10,7 @@
   <link href="booking-widget.css" type="text/css" media="all" rel="stylesheet" />
   <script src="booking-widget.js" type="text/javascript"></script>
   <script src="booking-widget-templates.js" type="text/javascript"></script>
-  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script>
+  <!--<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false&amp;libraries=places"></script> -->
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -18,18 +18,29 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+
 </head>
 
 <body id="bb">
 
-  <div bb-widget="{
+  <!-- <div bb-widget="{
     company_id: '<%= company_id %>',
     clear_member: true,
     item_defaults: {merge_resources: true, merge_people: true},
     route_format: '/{page}'
     }" bb-scroll-to="page:loaded" class="container">
-  </div>
-
+  </div> -->
 </body>
+
+<script type="text/javascript">
+    var loc = window.location.toString();
+    // params = loc.split('?')[1];
+    // var bbCompanyId = params.split("=")[1];
+    // console.log(bbCompanyId);
+    // var div = document.getElementById('bb');
+
+    div.innerHTML = '<div bb-widget="{company_id: ukw3056403,clear_member: true,item_defaults: {merge_resources: true,merge_people: true},route_format: \'/{page}\' }" bb-scroll-to="page:loaded" class="container"></div>';
+    
+  </script>
 
 </html>
